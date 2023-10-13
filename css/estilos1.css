@@ -1,0 +1,403 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: block;
+    background-color: black;
+    font-weight: 900;
+}
+
+.caja1 {
+    display: flex;
+}
+
+#header {
+    background-color: white;
+    border-left: black 4px solid;
+    border-top: 4px black solid;
+    border-radius: 20px 20px 20px 20px;
+}
+
+#main {
+    display: block;
+    background-color: black;
+    width: 100%;
+    max-height: calc(100vh - 40px);
+    overflow: auto;
+    border-right: 4px black solid;
+    border-left: 4px black solid;
+    border-top: 4px black solid;
+    border-radius: 20px;
+}
+
+#main.blur {
+    filter: blur(20px);
+    transition: filter 0.5s ease-out;
+}
+
+#main:not(.blur) {
+    filter: blur(0);
+}
+
+#footer {
+    background-color: black;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 999;
+}
+
+#footer label
+{
+    font-family: 'letra1';
+    font-size: 10px;
+    text-shadow: 0px 0px 0px transparent;
+    -webkit-text-stroke: 0px transparent;
+    text-stroke: 0px transparent;
+    color: white;
+}
+
+#footer label a
+{
+    text-decoration: none;
+    color: #b0febd;
+}
+
+header {
+    display: inline-block;
+    width: 130px;
+    transition: 0.3s;
+    margin-bottom: auto;
+    height: inherit;
+}
+
+/*header:hover {
+    width: 150px;
+    transition: 0.3s;
+}*/
+
+header nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header nav button {
+    display: grid;
+    font-family: 'letra1';
+    background-color: transparent;
+    /*border: transparent;*/
+    border-radius: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: black;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 17px;
+    width: 100px;
+    transition: 0.1s;
+    text-shadow: 0px 0px 0px transparent; 
+    -webkit-text-stroke: 0px transparent;
+    text-stroke: 0px transparent;
+    border: 4px black solid;
+    font-weight: 900;
+}
+
+header nav button:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    transition: 0.1s;
+}
+
+nav button img
+{
+    width: 40px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+nav button:hover img
+{
+    filter: invert(1);
+}
+
+header #logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    width: 100px;
+    height: auto;
+}
+
+.centrado {
+    position: relative;
+    text-align: center;
+    background-color: white;
+}
+
+.centrado:nth-child(2) {
+    padding-top: 10px;
+    border-top: 4px black solid;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.centrado:nth-child(2) label {
+    font-size: 40px;
+    font-family: "letra1";
+}
+
+.centrado:nth-child(3) {
+    padding-top: 15px;
+}
+
+.centrado:nth-child(3) label {
+    display: inline-block;
+    font-size: 20px;
+    font-family: "letra2";
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    pointer-events: none;
+    margin-top: 10px;
+    color: black;
+    text-shadow: 0px 0px 0px transparent; 
+    -webkit-text-stroke: 0px transparent;
+    text-stroke: 0px transparent;
+}
+
+.centrado button
+{
+    background: transparent;
+    border: 0px transparent solid;
+    margin: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.centrado button img
+{
+    display: block;
+    width: 150px;
+    height: auto;
+    border-radius: 12px;
+    border: black 4px solid;
+}
+
+.centrado button #imgMasTamaño {
+    width: 200px;
+}
+
+.centrado img.fondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    transition: 0.3s;
+    filter: blur(10px);
+}
+
+.centrado img {
+    width: 75%;
+    height: auto;
+    position: relative;
+    z-index: 2;
+    transition: 0.3s;
+}
+
+.centrado .cajaFlex img {
+    width: 35%;
+    height: auto;
+    margin: 10px;
+    border-radius: 20px;
+    border: #0e0e0e 5px solid;
+}
+
+.centrado .cajaFlex label {
+    font-family: "letra2";
+    font-size: 20px;
+    letter-spacing: -1.4px;
+}
+
+.centrado iframe {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.centrado video
+{
+    width: 40%;
+}
+
+#centradoF
+{
+    background-color: black;
+    border-bottom: black 4px solid;
+}
+
+.centrado2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.centrado2 a img {
+    width: 100px;
+    height: auto;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.centrado2 a:hover img {
+    width: 120px;
+    height: auto;
+    margin: 30px;
+    transition: 0.3s;
+}
+
+.cajaFlex {
+    display: inline-flex;
+    width: 80%;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'letra1';
+    src: url('../fuenteLetra/TexgyreadventorRegular-1meB.otf') format('truetype');
+}
+
+@font-face {
+    font-family: 'letra2';
+    src: url('../fuenteLetra/TexgyreadventorRegular-1meB.otf') format('truetype');
+}
+
+@media (max-width: 380px) {
+    header nav button {
+        padding-top: 5px;
+        padding-bottom: 5px;
+        margin-left: 3px !important;
+        margin-right: 3px !important;
+        font-size: 12px;
+        width: 75px;
+    }
+
+    #header {
+        height: 49px !important;
+    }
+
+    #header nav button {
+        margin-top: 6px !important;
+        margin-bottom: 6px !important;
+    }
+
+    .parcheHeader
+    {
+        height: 49px !important;
+    }
+}
+
+@media (max-width: 500px) {
+
+}
+
+@media (max-width: 700px) {
+    header {
+        position: fixed;
+        bottom: 39px;
+        left: 0;
+        display: inline-block;
+        width: -webkit-fill-available;
+        transition: 0.3s;
+        margin-bottom: auto;
+        height: 63px !important;
+        z-index: 9;
+    }
+
+    #header
+    {
+        border-right: black 4px solid;
+        border-top: black 4px solid;
+        border-radius: 20px 20px 10px 10px;
+        display: inline-grid;
+    }
+
+    #header nav button {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    header #logo {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 8px;
+    }
+
+    header nav button {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: -webkit-fill-available;
+    }
+
+    #main {
+        padding-bottom: 70px;
+    }
+
+    .centrado video
+    {
+        width: 100% !important;
+    }
+
+    header nav {
+        display: inline-flex;
+    }
+
+    nav button img {
+        width: 40%;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .centrado video
+    {
+        width: 70%;
+    }
+}
+
+@media (max-width: 1000px) {
+    .centrado video
+    {
+        width: 60%;
+    }
+}
