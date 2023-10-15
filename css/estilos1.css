@@ -44,8 +44,7 @@ body {
     z-index: 999;
 }
 
-#footer label
-{
+#footer label {
     font-family: 'letra1';
     font-size: 10px;
     text-shadow: 0px 0px 0px transparent;
@@ -54,8 +53,7 @@ body {
     color: white;
 }
 
-#footer label a
-{
+#footer label a {
     text-decoration: none;
     color: #b0febd;
 }
@@ -92,7 +90,7 @@ header nav button {
     margin-right: auto;
     font-size: 17px;
     width: 100px;
-    text-shadow: 0px 0px 0px transparent; 
+    text-shadow: 0px 0px 0px transparent;
     -webkit-text-stroke: 0px transparent;
     text-stroke: 0px transparent;
     border: 4px black solid;
@@ -105,8 +103,7 @@ header nav button:hover {
     color: white;
 }
 
-nav button img
-{
+nav button img {
     width: 40px;
     height: auto;
     margin-left: auto;
@@ -114,8 +111,7 @@ nav button img
     color: black;
 }
 
-nav button:hover img
-{
+nav button:hover img {
     filter: invert(1);
 }
 
@@ -162,13 +158,12 @@ header #logo {
     pointer-events: none;
     margin-top: 10px;
     color: black;
-    text-shadow: 0px 0px 0px transparent; 
+    text-shadow: 0px 0px 0px transparent;
     -webkit-text-stroke: 0px transparent;
     text-stroke: 0px transparent;
 }
 
-.centrado button
-{
+.centrado button {
     background: transparent;
     border: 0px transparent solid;
     margin: 10px;
@@ -178,8 +173,7 @@ header #logo {
     background-size: cover;
 }
 
-.centrado button img
-{
+.centrado button img {
     display: block;
     width: 150px;
     height: auto;
@@ -230,13 +224,11 @@ header #logo {
     left: 0;
 }
 
-.centrado video
-{
+.centrado video {
     width: 40%;
 }
 
-#centradoF
-{
+#centradoF {
     background-color: black;
     border-bottom: black 4px solid;
 }
@@ -266,8 +258,29 @@ header #logo {
 
 .cajaFlex {
     display: inline-flex;
-    width: 80%;
+}
+
+#cajaUsuario {
+    display: grid;
+}
+
+nav #cajaUsuario button {
+    display: flex;
+    font-size: 15px;
     align-items: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+nav #cajaUsuario button img {
+    width: 25px;
+    height: auto;
+}
+
+#cajaUsuario > img {
+    display: none;
 }
 
 @font-face {
@@ -299,15 +312,24 @@ header #logo {
         margin-bottom: 6px !important;
     }
 
-    .parcheHeader
-    {
+    .parcheHeader {
         height: 49px !important;
+    }
+
+    #cajaUsuario > img {
+        height: 40px !important;
+    }
+
+    nav #cajaUsuario button {
+        font-size: 12px !important;
+    }
+
+    nav #cajaUsuario button img {
+        width: 17px !important;
     }
 }
 
-@media (max-width: 500px) {
-
-}
+@media (max-width: 500px) {}
 
 @media (max-width: 700px) {
     header {
@@ -321,8 +343,7 @@ header #logo {
         z-index: 9;
     }
 
-    #header
-    {
+    #header {
         border-right: black 4px solid;
         border-top: black 4px solid;
         border-radius: 20px 20px 10px 10px;
@@ -357,8 +378,7 @@ header #logo {
         padding-bottom: 70px;
     }
 
-    .centrado video
-    {
+    .centrado video {
         width: 100% !important;
     }
 
@@ -370,18 +390,49 @@ header #logo {
         width: 40%;
     }
 
+    #cajaUsuario {
+        display: flex;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        background-color: white;
+        border: black 4px solid;
+        border-radius: 20px;
+        left: auto;
+        right: auto;
+    }
+
+    #cajaUsuario > img {
+        display: block;
+        width: auto;
+        height: 50px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
+    nav #cajaUsuario button {
+        display: flex;
+        font-size: 15px;
+        align-items: center;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    nav #cajaUsuario button img {
+        width: 25px;
+        height: auto;
+    }
+
 }
 
 @media (max-width: 800px) {
-    .centrado video
-    {
+    .centrado video {
         width: 70%;
     }
 }
 
 @media (max-width: 1000px) {
-    .centrado video
-    {
+    .centrado video {
         width: 60%;
     }
 }
