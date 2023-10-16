@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head"></head>
+
+<body>
+
+    <div class="caja1">
+        <header id="header" class="parcheHeader"></header>
+        <main id="main" class="blur">
+
+            <div class="centrado" id="centradoF">
+                <video id="miVideo" autoplay muted loop reverse>
+                    <source class="fondo" src="./img/index/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="centrado">
+                <label>Login<label>
+            </div>
+            <div class="centrado">
+                <form method="post" action="login.php">
+                    <input type="text" name="nombre" placeholder="Nombre" required>
+                    <input type="email" name="email" placeholder="Correo electrónico" required>
+                    <input type="password" name="contrasena" placeholder="Contraseña" required>
+                    <div class="g-signin2" data-onsuccess="onSignIn" data-clientid="TU_ID_DE_CLIENTE"></div>
+                    <button type="submit"><img src="./img/header/ingresar.svg">Entrar</button>
+                </form>
+            </div>
+    </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/headIndex.js"></script>
+    <script>
+        const head = document.getElementById('head');
+        head.innerHTML = headHTML;
+    </script>
+
+    <script src="js/headerIndex.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        header.innerHTML = headerHTML;
+    </script>
+
+    <script src="js/footerIndex.js"></script>
+    <script>
+        const footer = document.getElementById('footer');
+        footer.innerHTML = footerHTML;
+    </script>
+
+    <script src="js-code/ajustarAlturaHeader.js"></script>
+    <script src="js-code/cambiarPagina.js"></script>
+    <script src="js-code/cambiarPunteroFrundles.js"></script>
+
+    <script>
+        function onSignIn(googleUser) {
+            // Maneja la autenticación con Google aquí y prellena los campos si es necesario.
+        }
+    </script>
+    <!-- Agrega la biblioteca de Google Sign-In -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+        nav #cajaUsuario button:nth-child(1) {
+            background-color: black;
+            color: white;
+        }
+
+        nav #cajaUsuario button:nth-child(1) img {
+            filter: invert(1)
+        }
+    </style>
+
+</body>
+
+</html>

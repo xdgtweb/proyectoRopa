@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head"></head>
+
+<body>
+
+    <div class="caja1">
+        <header id="header" class="parcheHeader"></header>
+        <main id="main" class="blur">
+
+            <div class="centrado" id="centradoF">
+                <video id="miVideo" autoplay muted loop reverse>
+                    <source class="fondo" src="./img/index/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="centrado">
+                <label>Cesta<label>
+            </div>
+            <div class="centrado">
+                <button onclick="cambiarScript('temporada1')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 1</label>
+                </button>
+                <button onclick="cambiarScript('temporada2')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 2</label>
+                </button>
+                <button onclick="cambiarScript('temporada3')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 3</label>
+                </button>
+                <button onclick="cambiarScript('temporada4')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 4</label>
+                </button>
+                <button onclick="cambiarScript('temporada5')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 5</label>
+                </button>
+                <button onclick="cambiarScript('temporada6')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 6</label>
+                </button>
+                <button onclick="cambiarScript('temporada7')">
+                    <img src="./img/index/nuevo/1.jpg">
+                    <label>Camiseta 7</label>
+                </button>
+            </div>
+    </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/headIndex.js"></script>
+    <script>
+        const head = document.getElementById('head');
+        head.innerHTML = headHTML;
+    </script>
+
+    <script src="js/headerIndex.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        header.innerHTML = headerHTML;
+    </script>
+
+    <script src="js/footerIndex.js"></script>
+    <script>
+        const footer = document.getElementById('footer');
+        footer.innerHTML = footerHTML;
+    </script>
+
+    <script src="js-code/ajustarAlturaHeader.js"></script>
+    <script src="js-code/cambiarPagina.js"></script>
+    <script src="js-code/cambiarPunteroFrundles.js"></script>
+
+    <style>
+        nav #cajaUsuario button:nth-child(3) {
+            background-color: black;
+            color: white;
+        }
+
+        nav #cajaUsuario button:nth-child(3) img {
+            filter: invert(1)
+        }
+    </style>
+
+</body>
+
+</html>

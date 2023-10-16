@@ -24,8 +24,22 @@ function cambiarPagina(pagina) {
                 window.location.href = './detalles.html';
             }
             break;
+        case 'login':
+            if (rutaActual.includes('/login.html')) {
+                // Ya estás en una página que contiene 'detalles.html', no hagas nada
+            } else {
+                window.location.href = './login.html';
+            }
+            break;
+        case 'cesta':
+            if (rutaActual.includes('/cesta.html')) {
+                // Ya estás en una página que contiene 'detalles.html', no hagas nada
+            } else {
+                window.location.href = './cesta.html';
+            }
+            break;
         // Agregar más casos para otras páginas
         default:
-            // Página no encontrada o manejar otros casos
+        // Página no encontrada o manejar otros casos
     }
 }
