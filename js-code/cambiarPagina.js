@@ -38,6 +38,13 @@ function cambiarPagina(pagina) {
                 window.location.href = './cesta.html';
             }
             break;
+        case 'registro':
+            if (rutaActual.includes('/registro.html')) {
+                // Ya estás en una página que contiene 'detalles.html', no hagas nada
+            } else {
+                window.location.href = './registro.html';
+            }
+            break;
         // Agregar más casos para otras páginas
         default:
         // Página no encontrada o manejar otros casos

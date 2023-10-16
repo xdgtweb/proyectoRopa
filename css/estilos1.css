@@ -299,7 +299,11 @@ nav #cajaUsuario button img {
 
 .centrado input[type="text"],
 input[type="email"],
-input[type="password"] {
+input[type="password"],
+input[type="date"],
+input[type="password"], 
+select
+{
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -314,7 +318,7 @@ input[type="password"] {
     text-align: center;
 }
 
-.centrado button[type="submit"] {
+.centrado .buttonInput {
     display: inline-flex;
     padding: 10px;
     background-color: white;
@@ -329,26 +333,27 @@ input[type="password"] {
     justify-content: center;
 }
 
-.centrado button[type="submit"]:hover {
+.centrado .buttonInput:hover {
     background-color: black;
     color: white;
 }
 
-.centrado button[type="submit"] img {
+.centrado .buttonInput img {
     width: 20px;
     height: auto;
     border: 0;
     border-radius: 0;
 }
 
-.centrado button[type="submit"]:hover img {
+.centrado .buttonInput:hover img {
     filter: invert(1);
 }
 
 .centrado .labelEspecial
 {
     max-width: 800px !important;
-    text-align: justify;
+    text-align: justify !important;
+    margin: 10px !important;
 }
 
 .centrado label .labelColor

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head id="head"></head>
+
+<body>
+
+    <div class="caja1">
+        <header id="header" class="parcheHeader"></header>
+        <main id="main" class="blur">
+
+            <div class="centrado" id="centradoF">
+                <video id="miVideo" autoplay muted loop reverse>
+                    <source class="fondo" src="./img/index/banner.mp4" type="video/mp4">
+                </video>
+            </div>
+            <div class="centrado">
+                <label>Registro<label>
+            </div>
+            <div class="centrado">
+                <form action="registrar_cliente.php" method="post">
+                    <label for="nombre_completo">Nombre Completo:</label>
+                    <input type="text" name="nombre_completo" required><br>
+
+                    <label for="correo">Correo Electrónico:</label>
+                    <input type="email" name="correo" required><br>
+
+                    <label for="contrasena">Contraseña:</label>
+                    <input type="password" name="contrasena" required><br>
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" name="direccion"><br>
+
+                    <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                    <input type="date" name="fecha_nacimiento" required min="1930-12-31" required max="2005-12-31"><br>
+
+                    <label for="genero">Género:</label>
+                    <select name="genero" required>
+                        <option value="Hombre">Hombre</option>
+                        <option value="Mujer">Mujer</option>
+                        <option value="Cualquier tipo de Gay">Cualquier tipo de Gay</option>
+                    </select><br>
+
+                    <label for="idioma_preferido">Idioma Preferido:</label>
+                    <select name="idioma_preferido" required>
+                        <option value="Español">Español</option>
+                        <option value="Inglés">Inglés</option>
+                        <option value="Chino Mandarín">Chino Mandarín</option>
+                        <option value="Hindi">Hindi</option>
+                        <option value="Árabe">Árabe</option>
+                        <option value="Francés">Francés</option>
+                        <option value="Portugués">Portugués</option>
+                        <option value="Bengalí">Bengalí</option>
+                        <option value="Ruso">Ruso</option>
+                        <option value="Japonés">Japonés</option>
+                    </select><br>
+
+
+                    <button class="buttonInput" type="submit" value="Registrar">Registrarse</button>
+                </form>
+            </div>
+    </div>
+
+    </main>
+
+    <footer id="footer"></footer>
+    <script src="js/headIndex.js"></script>
+    <script>
+        const head = document.getElementById('head');
+        head.innerHTML = headHTML;
+    </script>
+
+    <script src="js/headerIndex.js"></script>
+    <script>
+        const header = document.getElementById('header');
+        header.innerHTML = headerHTML;
+    </script>
+
+    <script src="js/footerIndex.js"></script>
+    <script>
+        const footer = document.getElementById('footer');
+        footer.innerHTML = footerHTML;
+    </script>
+
+    <script src="js-code/ajustarAlturaHeader.js"></script>
+    <script src="js-code/cambiarPagina.js"></script>
+    <script src="js-code/cambiarPunteroFrundles.js"></script>
+
+    <script>
+        function onSignIn(googleUser) {
+            // Maneja la autenticación con Google aquí y prellena los campos si es necesario.
+        }
+    </script>
+    <!-- Agrega la biblioteca de Google Sign-In -->
+    <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+    <style>
+        nav #cajaUsuario button:nth-child(1) {
+            background-color: black;
+            color: white;
+        }
+
+        nav #cajaUsuario button:nth-child(1) img {
+            filter: invert(1)
+        }
+    </style>
+
+</body>
+
+</html>
