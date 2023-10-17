@@ -301,9 +301,8 @@ nav #cajaUsuario button img {
 input[type="email"],
 input[type="password"],
 input[type="date"],
-input[type="password"], 
-select
-{
+input[type="password"],
+select {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
@@ -349,15 +348,13 @@ select
     filter: invert(1);
 }
 
-.centrado .labelEspecial
-{
+.centrado .labelEspecial {
     max-width: 800px !important;
     text-align: justify !important;
     margin: 10px !important;
 }
 
-.centrado label .labelColor
-{
+.centrado label .labelColor {
     color: gray;
 }
 
@@ -401,8 +398,7 @@ select
     transition: 0.2s;
 }
 
-.centrado .labelLineas
-{
+.centrado .labelLineas {
     font-size: 25px !important;
     font-family: 'letra1';
 }
@@ -527,7 +523,7 @@ select
 
     }
 
-    #cajaUsuario > img {
+    #cajaUsuario>img {
         display: block;
         width: auto;
         height: 50px;

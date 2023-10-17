@@ -3,17 +3,13 @@
 
 <head id="head"></head>
 
-<body>
+<body id="contenidoMain" hidden>
 
     <div class="caja1">
         <header id="header" class="parcheHeader"></header>
         <main id="main" class="blur">
 
-            <div class="centrado" id="centradoF">
-                <video id="miVideo" autoplay muted loop reverse>
-                    <source class="fondo" src="./img/index/banner.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div class="centrado" id="centradoF"></div>
             <div class="centrado">
                 <label>Detalles<label>
             </div>
@@ -28,9 +24,9 @@
                     funcionalidad y estética.
                 </label>
                 <label class="labelEspecial">
-                    No te pierdas ni un solo detalle de lo que sucede en Plasma. 
-                    Síguenos en nuestras redes sociales para ser parte de nuestra 
-                    comunidad de amantes de la moda. ¡Comparte tus looks y experiencias 
+                    No te pierdas ni un solo detalle de lo que sucede en Plasma.
+                    Síguenos en nuestras redes sociales para ser parte de nuestra
+                    comunidad de amantes de la moda. ¡Comparte tus looks y experiencias
                     con nosotros!
                 </label>
             </div>
@@ -58,6 +54,12 @@
         header.innerHTML = headerHTML;
     </script>
 
+    <script src="js/bannerIndex.js"></script>
+    <script>
+        const banner = document.getElementById('centradoF');
+        banner.innerHTML = bannerHTML;
+    </script>
+
     <script src="js/footerIndex.js"></script>
     <script>
         const footer = document.getElementById('footer');
@@ -67,6 +69,7 @@
     <script src="js-code/ajustarAlturaHeader.js"></script>
     <script src="js-code/cambiarPagina.js"></script>
     <script src="js-code/cambiarPunteroFrundles.js"></script>
+    <script src="js-code/cargaPaginaBodyHidden.js"></script>
 
 </body>
 

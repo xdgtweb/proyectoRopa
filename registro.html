@@ -3,17 +3,13 @@
 
 <head id="head"></head>
 
-<body>
+<body id="contenidoMain" hidden>
 
     <div class="caja1">
         <header id="header" class="parcheHeader"></header>
         <main id="main" class="blur">
 
-            <div class="centrado" id="centradoF">
-                <video id="miVideo" autoplay muted loop reverse>
-                    <source class="fondo" src="./img/index/banner.mp4" type="video/mp4">
-                </video>
-            </div>
+            <div class="centrado" id="centradoF"></div>
             <div class="centrado">
                 <label>Registro<label>
             </div>
@@ -76,6 +72,12 @@
         header.innerHTML = headerHTML;
     </script>
 
+    <script src="js/bannerIndex.js"></script>
+    <script>
+        const banner = document.getElementById('centradoF');
+        banner.innerHTML = bannerHTML;
+    </script>
+
     <script src="js/footerIndex.js"></script>
     <script>
         const footer = document.getElementById('footer');
@@ -85,6 +87,7 @@
     <script src="js-code/ajustarAlturaHeader.js"></script>
     <script src="js-code/cambiarPagina.js"></script>
     <script src="js-code/cambiarPunteroFrundles.js"></script>
+    <script src="js-code/cargaPaginaBodyHidden.js"></script>
 
     <script>
         function onSignIn(googleUser) {
